@@ -1,0 +1,98 @@
+*
+{
+  margin:0;
+  padding:0;
+}
+html, body
+{
+  height: 100%;
+	font-family: 'Roboto';
+}
+.foundation
+{
+  margin:0 auto;
+  max-width:960px;
+}
+.clear
+{
+  clear:both;
+}
+#top_menu
+{
+  top: 200px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.logo
+{
+  background:url('../img/logo.svg') no-repeat;
+  background-size: contain;
+  height: 5em;
+}
+.call_button
+{
+  background: #4285f4;
+  font-size: 1.2em;
+  padding: 3px;
+}
+.background_content
+{
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bc1
+{
+  background-image:url('../img/background.jpg');
+}
+.bc2
+{
+  background-image:url('../img/background2.jpg');
+}
+/*numcounter*/
+.numcounter_number
+{
+  transition:1s ease all;
+  opacity:0;
+}
+.numcounter_visible
+{
+  opacity:1;
+}
+/*center div example*/
+.center
+{
+    position: relative;
+    width: 100%;
+    height: 5em;
+}
+.center div
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*end center div example*/
+.footer_social a
+{
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-size: 100%;
+}
+.vk
+{
+  background: url('../img/vk.svg') no-repeat;
+}
+.fb
+{
+  background:url('../img/facebook.svg') no-repeat;
+}
+.ig
+{
+  background:url('../img/instagram.svg') no-repeat;
+}
+/*scarlett theme*/

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <![endif]-->
+  <meta charset="utf-8"/>
+  <title>Scarlett</title>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="author" content=""/>
+  
+  <meta property="og:title" content=""/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://scarlett.dev/index"/>
+  <meta property="og:image" content="http://scarlett.dev/img/ogimage.png"/>
+  <!-- build:css css/script.css -->
+  <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css"/>
+  <link rel="stylesheet" type="text/css" href="js/remodal/remodal.css">
+  <link rel="stylesheet" type="text/css" href="js/remodal/remodal-default-theme.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/media.css"/>
+  <link rel="stylesheet" type="text/css" href="css/newstyle.css"/>
+  <!-- endbuild -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="img/icons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="img/icons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#" />
+  <meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="img/icons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="img/icons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="img/icons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="img/icons/mstile-310x310.png" />
+  
+</head>
+<body>
+  <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+    <form class="hidden_form" id="send_form" action="#" method="post">
+      <input name="formname" type="hidden" id="formname">
+      <input name="name" class="inp" type="text" required="required" placeholder="Name" id="inpname">
+      <input name="phone" class="inp inp_phone" type="text" required="required" placeholder="Phone">
+      <input class="sub" type="submit" name="submit" value="Submit" id="button">
+      <div id="outmessage"></div>
+      <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+      <button data-remodal-action="close" class="remodal-close"></button>
+    </form>
+  </div>
+  <header>
+    <div class="foundation">
+      <div class="logo"></div>
+      <a class="call_phone" href="tel:+81234567890">8(123)-456-78-90</a>
+      <a class="call_button" href="#" data-remodal-target="modal" onclick="formname('Hidden Form')">Order</a>
+      <div class="clear"></div>
+      <div id="top_menu">
+        <div class="main_menu">
+          <a class="menu_item">Point1</a>
+          <a class="menu_item">Point2</a>
+          <a class="menu_item">Point3</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="background_content bc1">
+    <div class="foundation">
+      <div class="subheader">Subheader</div>
+      <div class="wow shake">Animated element</div>
+      <div class="center">
+        <div>Author of background - <a href="https://www.behance.net/fabiankrueger">Fabian Krueger</a></div>
+      </div>
+      <div class="slider">
+        <img src="img/scarlett1.jpg"/>
+        <img src="img/scarlett2.jpg"/>
+        <img src="img/scarlett3.jpg"/>
+        <img src="img/scarlett4.jpg"/>
+        <img src="img/scarlett5.jpg"/>
+      </div>
+    </div>
+  </section>
+  <section class="text_content">
+    <div class="foundation">
+      <div class="subheader">Subheader 2</div>
+      <p>
+        Just text content for demonstrate parallax.<br>
+        In the end of this page you can see random generated order of endless images.<br>
+        You can change them to blogposts or something like that:)
+      </p>
+    </div>
+  </section>
+  <section class="background_content bc2">
+    <div class="foundation">
+      <div class="subheader">Subheader 3</div>
+      <button class="resizebutton">Resize</button>
+      <div class="resizetext">Text</div>
+      <div id="numcounter">
+        <div data-num="1000" class="numcounter_number">0</div>
+        <div data-num="100" class="numcounter_number">0</div>
+        <div data-num="10" class="numcounter_number">0</div>
+      </div>
+    </div>
+  </section>
+  <div id="endofpage"></div>
+<footer>
+  <div class="foundation">
+    <div class="logo"></div>
+    <div class="footer_copy">
+      All rights reserved &copy;
+    </div>
+    <div class="footer_social">
+      <a class="vk"></a>
+      <a class="fb"></a>
+      <a class="ig"></a>
+    </div>
+  </div>
+</footer>
+  <!-- build:js js/script.js -->
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="js/remodal/remodal.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

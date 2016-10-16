@@ -1,0 +1,28 @@
+Images:
+http://compressjpeg.com/ru/
+
+Fonts:
+http://transfonter.org/
+
+Flex:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Favicon:
+http://www.favicomatic.com/
+
+WOW Animations:
+http://mynameismatthieu.com/WOW/docs.html
+
+Check you site for technical troubles:
+https://varvy.com/
+http://www.responsinator.com/
+
+
+Gulp:
+npm install --global gulp
+cd /c/your/project/folder
+npm init
+npm install --save-dev gulp-autoprefixer gulp-clean-css gulp-sass gulp-uncss gulp-useref gulp-if gulp-uglify
+
+JavaScript libraries:
+http://microjs.com/
