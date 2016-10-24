@@ -1,0 +1,19 @@
+/* Main SCSS file*/
+@import "hover";
+
+$color: #000;
+$colorSubheader: #DDD;
+$font: 'Roboto';
+$fontLt: 'Roboto Lt';
+
+@mixin flexRegular($justify-content){
+  display: flex;
+  justify-content: $justify-content;
+}
+@mixin background($image,$position){
+  background:{
+    image: url($image);
+    repeat: no-repeat;
+    position: $position;
+  }
+}

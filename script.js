@@ -14,6 +14,10 @@ $(document).ready(function(){
         $('#top_menu').css('top', 0);
       }
     });
+    if ($(this).scrollTop() > 0)
+    {
+      $('#top_menu').css('top', 0);
+    }
   }
   $("a.menu_item").click(function(){
     $("html, body").animate({
@@ -45,10 +49,10 @@ $(document).ready(function(){
       url: "sendmail.php",
       data: form_data,
       success: function(){
-        $('#outmessage').html('Ваше сообщение отправлено!').fadeIn().delay(3000).fadeOut("slow");
+        $('#outmessage').html('Your message was successfully sent!').fadeIn().delay(3000).fadeOut("slow");
         $('#outmessage').css('color', 'white');},
       error: function(){
-        $('#outmessage').html('Ошибка при отправке сообщения!').fadeIn().delay(3000).fadeOut("slow");
+        $('#outmessage').html('Error!').fadeIn().delay(3000).fadeOut("slow");
         $('#outmessage').css('color', 'red');}
       });
   });

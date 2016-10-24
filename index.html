@@ -14,7 +14,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://scarlett.dev/index"/>
   <meta property="og:image" content="http://scarlett.dev/img/ogimage.png"/>
-  <!-- build:css css/script.css -->
+  <!-- build:css css/style.css -->
   <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css"/>
   <link rel="stylesheet" type="text/css" href="js/remodal/remodal.css">
   <link rel="stylesheet" type="text/css" href="js/remodal/remodal-default-theme.css">
@@ -51,9 +51,9 @@
   <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
     <form class="hidden_form" id="send_form" action="#" method="post">
       <input name="formname" type="hidden" id="formname">
-      <input name="name" class="inp" type="text" required="required" placeholder="Name" id="inpname">
+      <input name="name" class="inp" type="text" required="required" placeholder="Name">
       <input name="phone" class="inp inp_phone" type="text" required="required" placeholder="Phone">
-      <input class="sub" type="submit" name="submit" value="Submit" id="button">
+      <input name="submit" class="sub" type="submit" value="Submit" id="button">
       <div id="outmessage"></div>
       <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
       <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
@@ -64,7 +64,7 @@
     <div class="foundation">
       <div class="logo"></div>
       <a class="call_phone" href="tel:+81234567890">8(123)-456-78-90</a>
-      <a class="call_button" href="#" data-remodal-target="modal" onclick="formname('Hidden Form')">Order</a>
+      <a class="call_button hvr-push" href="#" data-remodal-target="modal" onclick="formname('Hidden Form')">Order</a>
       <div class="clear"></div>
       <div id="top_menu">
         <div class="main_menu">
