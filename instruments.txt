@@ -13,7 +13,7 @@ http://www.favicomatic.com/
 WOW Animations:
 http://mynameismatthieu.com/WOW/docs.html
 
-Check you site for technical troubles:
+Check site for technical troubles:
 https://varvy.com/
 http://www.responsinator.com/
 
@@ -22,7 +22,7 @@ Gulp:
 npm install --global gulp
 cd /c/your/project/folder
 npm init
-npm install --save-dev gulp-autoprefixer gulp-clean-css gulp-sass gulp-uncss gulp-useref gulp-if gulp-uglify
+npm install --save-dev gulp-autoprefixer gulp-clean-css gulp-sass gulp-uncss gulp-useref gulp-if gulp-uglify gulp-livereload gulp-connect
 
 JavaScript libraries:
 http://microjs.com/

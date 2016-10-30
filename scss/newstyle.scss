@@ -1,5 +1,9 @@
-/* Main SCSS file*/
-@import "hover";
+/* Main SCSS file */
+@import "hover/hover";
+@import "animate";
+@import "newstyle870";
+@import "newstyle600";
+@import "newstyle480";
 
 $color: #000;
 $colorSubheader: #DDD;
@@ -10,10 +14,24 @@ $fontLt: 'Roboto Lt';
   display: flex;
   justify-content: $justify-content;
 }
-@mixin background($image,$position){
+@mixin backgroundMobile($backgroundColor:transparent){
+  background:{
+    image: none;
+    color: $backgroundColor;
+  }
+}
+@mixin backgroundHalf($image){
   background:{
     image: url($image);
     repeat: no-repeat;
-    position: $position;
+    position: 50%;
+    size: contain;
   }
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
