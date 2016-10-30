@@ -28,6 +28,9 @@ $(document).ready(function(){
     });
     return false;
   });
+  $("#open_menu").click(function(){
+    $('.main_menu').slideToggle("fast");
+  });
 
   /*slider*/
   $('.slider').slick({
@@ -104,9 +107,6 @@ $(document).ready(function(){
       }
     });
   });
-  
-  /*animate.css scroll*/
-  new WOW().init();
 });
 /*form name*/
 function formname(name)
@@ -118,3 +118,6 @@ function randomint(min, max)
 {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+/*animate.css scroll*/
+wow = new WOW({mobile:false});
+wow.init();
