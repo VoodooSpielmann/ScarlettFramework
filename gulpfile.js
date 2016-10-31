@@ -11,7 +11,7 @@ var connect = require('gulp-connect');
 var uncss = require('gulp-uncss');
 var uncssOptions = {
   html:['index.html'],
-  ignore:[/active/,/animated/,/slick/],
+  ignore:[/active/,/animated/,/slick/,/numcounter/],
   media:['(max-width: 870px)','(max-width: 600px)','(max-width: 480px)']
 };
 

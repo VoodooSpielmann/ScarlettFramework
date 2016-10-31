@@ -1,9 +1,6 @@
 /* Main SCSS file */
 @import "hover/hover";
 @import "animate";
-@import "newstyle870";
-@import "newstyle600";
-@import "newstyle480";
 
 $color: #000;
 $colorSubheader: #DDD;
@@ -35,3 +32,7 @@ $fontLt: 'Roboto Lt';
   right: 0;
   z-index: -1;
 }
+
+@import "newstyle870";
+@import "newstyle600";
+@import "newstyle480";
