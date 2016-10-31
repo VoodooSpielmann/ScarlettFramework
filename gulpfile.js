@@ -11,7 +11,7 @@ var connect = require('gulp-connect');
 var uncss = require('gulp-uncss');
 var uncssOptions = {
   html:['index.html'],
-  ignore:[/active/,/animated/],
+  ignore:[/active/,/animated/,/slick/],
   media:['(max-width: 870px)','(max-width: 600px)','(max-width: 480px)']
 };
 
@@ -41,8 +41,13 @@ gulp.task('images',function(){
 });
 
 gulp.task('fonts',function(){
-  return gulp.src(['fonts/**/*','fonts/*.css'])
+  return gulp.src(['fonts/**/*','!fonts/*.css'])
    .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('slider',function(){
+  return gulp.src(['js/slick/**/*','!js/slick/*.js','!js/slick/*.css'])
+   .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('watch',function(){
@@ -56,7 +61,7 @@ gulp.task('uncss',function(){
    .pipe(gulp.dest('css/'));
 });
 
-gulp.task('build',['uncss','images','fonts'],function(){
+gulp.task('build',['uncss','images','fonts','slider'],function(){
   return gulp.src('*.html')
    .pipe(useref())
    .pipe(gulpif('*.js',uglify()))
