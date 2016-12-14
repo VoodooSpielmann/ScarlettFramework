@@ -1,23 +1,18 @@
 $(document).ready(function(){
 
   /*main menu*/
-  if ($(document).width()>480)
-  {
+  function fixedElements(scrollHeight,elementId,defaultClass,fixedClass){
     $(window).scroll(function(){
-      var scroll_height = 200;
-      if ($(this).scrollTop()+0 < scroll_height)
-      {
-        $('#top_menu').css('top', (scroll_height-$(this).scrollTop()));
+      if ( $(this).scrollTop() > scrollHeight && $(elementId).hasClass(defaultClass)){
+        $(elementId).removeClass(defaultClass).addClass(fixedClass);
       }
-      else
-      {
-        $('#top_menu').css('top', 0);
+      else if($(this).scrollTop() <= scrollHeight && $(elementId).hasClass(fixedClass)){
+        $(elementId).removeClass(fixedClass).addClass(defaultClass);
       }
     });
-    if ($(this).scrollTop() > 0)
-    {
-      $('#top_menu').css('top', 0);
-    }
+  }
+  if ($(window).width()>480){
+    fixedElements(98,"#top-menu","top-menu-default","top-menu-fixed");
   }
   $("a.menu_item").click(function(){
     $("html, body").animate({
